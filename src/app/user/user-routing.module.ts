@@ -6,7 +6,7 @@ import { ItemDisplayComponent } from './item-display/item-display.component';
 import { ProductsDisplayComponent } from './products-display/products-display.component';
 
 
-const routes: Routes = [{path:"user",component:ProductsDisplayComponent,canActivate:[ProtectRoutesGuard]},
+const routes: Routes = [{path:"products",component:ProductsDisplayComponent,canActivate:[ProtectRoutesGuard]},
 {path:"itemData",component:ItemDisplayComponent}];
 
 @NgModule({

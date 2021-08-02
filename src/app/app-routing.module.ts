@@ -9,13 +9,11 @@ import { AddressComponent } from './user/components/address/address.component';
 import { OrdersComponent } from './user/components/orders/orders.component';
 import { TrackingComponent } from './user/components/tracking/tracking.component';
 import { UserProfileComponent } from './user/components/user-profile/user-profile.component';
-import { ProductsDisplayComponent } from './user/products-display/products-display.component';
-import { UserModule } from './user/user.module';
 
 const routes: Routes = [
   {
-    path: '',
-    component : NavbarComponent,
+    path:'',
+    component:NavbarComponent,
     children:[
       {
         path: '',
@@ -34,13 +32,14 @@ const routes: Routes = [
       path: 'kitchen',
       component: KitchenSubpageComponent
     }
-    ]
+    ],
 }
 ,
 {
     path: 'adress',
     component: AddressComponent
 },
+
 {
   path: 'profile',
   component:UserProfileComponent
